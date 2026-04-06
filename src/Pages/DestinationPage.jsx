@@ -38,7 +38,6 @@ export default function DestinationSection() {
   return (
     <section className="py-24 px-6 lg:px-20 bg-white">
 
-      {/* Heading */}
       <div className="max-w-7xl mx-auto mb-16 text-center">
         <h2 className="text-3xl lg:text-5xl font-bold text-black">
           Popular <span className="text-red-600">Destinations</span>
@@ -49,7 +48,6 @@ export default function DestinationSection() {
         </p>
       </div>
 
-      {/* Cards */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
         {DestinationFlights.map((flight, i) => (
@@ -59,25 +57,21 @@ export default function DestinationSection() {
             className="group rounded-3xl overflow-hidden cursor-pointer shadow-xl bg-white"
           >
 
-            {/* IMAGE */}
             <div className="relative h-[340px] overflow-hidden">
               <img
                 src={flight.img}
                 alt={flight.to}
-                className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                className="w-[350px] h-[320px] border object-cover group-hover:scale-110 transition duration-500"
               />
 
-              {/* OVERLAY */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
 
-              {/* BADGE */}
               <div className="absolute top-4 left-4">
                 <span className="text-xs bg-red-600 text-white px-3 py-1 rounded-full font-semibold">
                   Popular
                 </span>
               </div>
 
-              {/* TEXT ON IMAGE */}
               <div className="absolute bottom-0 p-5 text-white w-full">
                 <h3 className="text-lg font-bold">
                   {flight.from} → {flight.to}
@@ -93,7 +87,6 @@ export default function DestinationSection() {
               </div>
             </div>
 
-            {/* 🔥 NEW: DESCRIPTION BELOW */}
             <div className="p-5">
               <p className="text-gray-600 font-semibold text-sm leading-relaxed">
                 {flight.desc}
@@ -108,7 +101,6 @@ export default function DestinationSection() {
         ))}
       </div>
 
-      {/* BUTTON */}
       <div className="flex justify-center mt-16">
         <Link to="tel:">
           <button className="border border-black text-black hover:border-red-600 hover:text-red-600 px-10 py-4 rounded-lg font-bold transition">

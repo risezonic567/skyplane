@@ -20,7 +20,7 @@ export default function AboutSection() {
                         <img
                             src="https://images.unsplash.com/photo-1529070538774-1843cb3265df"
                             alt="flight"
-                            className="rounded-3xl shadow-2xl"
+                            className="rounded-3xl w-[500px] h-[400px] shadow-2xl"
                         />
 
                         {/* Glow Effect */}

@@ -35,6 +35,12 @@ export default function Footer() {
               </HashLink>
             </li>
 
+             <li>
+              <Link to="/flight-routes" className="hover:text-red-500 transition-all">
+                Flight-Routes
+              </Link>
+            </li>
+
             <li>
               <Link to="tel:+18448215950" className="hover:text-red-500 transition-all">
                 Contact Us
