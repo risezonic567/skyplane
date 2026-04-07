@@ -54,7 +54,6 @@ export default function FlightRoutesSection() {
    <>
     <section className="py-20 px-6 lg:px-20 bg-gray-50">
 
-      {/* Heading */}
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl lg:text-5xl font-bold text-black">
           Popular <span className="text-red-600">Flight Routes</span>
@@ -64,7 +63,6 @@ export default function FlightRoutesSection() {
         </p>
       </div>
 
-      {/* Cards */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {flightRoutes.map((route, i) => (
@@ -74,7 +72,6 @@ export default function FlightRoutesSection() {
             className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 group"
           >
 
-            {/* Top */}
             <div className="flex justify-between items-center mb-4">
               <Plane className="text-red-600 group-hover:rotate-12 transition" />
               <span className="text-xs bg-red-100 text-red-600 px-3 py-1 rounded-full font-semibold">
@@ -82,17 +79,14 @@ export default function FlightRoutesSection() {
               </span>
             </div>
 
-            {/* Route */}
             <h3 className="text-lg font-bold text-gray-800">
               {route.from} → {route.to}
             </h3>
 
-            {/* Duration */}
             <p className="text-gray-500 text-sm mt-1">
               Duration: {route.duration}
             </p>
 
-            {/* Price + CTA */}
             <div className="flex justify-between items-center mt-5">
               <span className="text-xl font-black text-red-600">
                 {route.price}
@@ -109,7 +103,6 @@ export default function FlightRoutesSection() {
         ))}
       </div>
 
-      {/* Button */}
       <div className="flex justify-center mt-12">
         <Link to="/flights">
           <button className="border border-black text-black hover:border-red-600 hover:text-red-600 px-8 py-4 rounded-lg font-bold transition">

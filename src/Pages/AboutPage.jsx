@@ -18,9 +18,9 @@ export default function AboutSection() {
                         className="relative"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1529070538774-1843cb3265df"
+                            src="/images/AboutUs into.jpg.jpeg"
                             alt="flight"
-                            className="rounded-3xl w-[500px] h-[400px] shadow-2xl"
+                            className="rounded-3xl w-full h-full shadow-2xl"
                         />
 
                         {/* Glow Effect */}

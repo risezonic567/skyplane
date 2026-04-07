@@ -8,28 +8,28 @@ const DestinationFlights = [
     from: "New York",
     to: "Los Angeles",
     price: "$320",
-    img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    img: "/images/Popular destination image 1.jpg.jpeg",
     desc: "Experience the glamour of Hollywood, sunny beaches, and vibrant nightlife."
   },
   {
     from: "Chicago",
     to: "Miami",
     price: "$210",
-    img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    img: "/images/Popular destination image 2.jpg.jpeg",
     desc: "Enjoy tropical vibes, beautiful beaches, and exciting nightlife in Miami."
   },
   {
     from: "San Francisco",
     to: "Las Vegas",
     price: "$150",
-    img: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+    img: "/images/Popular destination image 3.jpg.jpeg",
     desc: "Explore casinos, luxury resorts, and nonstop entertainment in Vegas."
   },
   {
     from: "Dallas",
     to: "Seattle",
     price: "$280",
-    img: "https://images.unsplash.com/photo-1502175353174-a7a70e73b362",
+    img: "/images/Popular destination image 4.jpg.jpeg",
     desc: "Discover scenic beauty, coffee culture, and iconic landmarks."
   }
 ];
@@ -61,7 +61,7 @@ export default function DestinationSection() {
               <img
                 src={flight.img}
                 alt={flight.to}
-                className="w-[350px] h-[320px] border object-cover group-hover:scale-110 transition duration-500"
+                className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>

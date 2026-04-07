@@ -22,9 +22,9 @@ export default function HomePage() {
 
             <div className="absolute inset-0">
               <img
-                src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05"
+                src="/images/home page banner.jpg.jpeg"
                 alt="Flight Background"
-                className="w-[1920px] h-[550px] border object-cover"
+                className="w-full h-full"
               />
             </div>
 
@@ -43,7 +43,7 @@ export default function HomePage() {
 
                 <h1 className="text-3xl lg:text-6xl font-black leading-tight mt-4">
                   BOOK YOUR <br />
-                  <span className="text-red-600">FLIGHTS ONLINE</span>
+                  <span className="text-red-500">FLIGHTS ONLINE</span>
                 </h1>
 
                 <p className="text-gray-300 max-w-md text-lg mt-4">

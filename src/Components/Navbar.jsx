@@ -13,17 +13,18 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 w-full z-50 bg-black backdrop-blur-sm shadow-md border-b">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between py-4">
+    <header className="sticky top-0 w-full z-50 bg-black backdrop-blur-sm shadow-md border-b h-16 md:h-20">
+  <div className="container mx-auto px-4 md:px-6 h-full">
+    
+    <div className="flex items-center justify-between h-full">
 
-          <Link to="/" className="flex items-center">
-            <img
-              src=""
-              alt="logo"
-              className="h-12 md:h-14"
-            />
-          </Link>
+      <Link to="/" className="flex items-center h-full">
+        <img
+          src="/Logo/Logo-for-Sky-ride.png"
+          alt="logo"
+          className="h-30 md:h-35 object-contain"
+        />
+      </Link>
 
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
